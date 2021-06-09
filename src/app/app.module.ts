@@ -6,17 +6,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ErrorMsgComponent } from './compartilhado/error-msg/error-msg.component';
 import { ListaLembreteComponent } from './paginas/lista-lembrete/lista-lembrete.component';
+import { FormLembreteComponent } from './compartilhado/form-lembrete/form-lembrete.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     ErrorMsgComponent,
-    ListaLembreteComponent
+    ListaLembreteComponent,
+    FormLembreteComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
